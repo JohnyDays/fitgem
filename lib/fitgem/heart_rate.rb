@@ -10,7 +10,7 @@ module Fitgem
     # @return [Hash] Hash containing an average of the days logs, and a
     #   list of all individual entries
     def heart_rate_on_date(date)
-      get("/user/#{@user_id}/heart/date/#{format_date(date)}.json")
+      get("/user/#{@user_id}/activites/heart/date/#{format_date(date)}/1d.json")
     end
 
     # ==========================================
